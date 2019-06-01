@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "serve ./ -p 3333",
-    "cypress:open": "cypress open",
-    "test": "npm start && cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec ./cypress/integration/counter/counter.spec.js --config video=false",
+    "test": "start-server-and-test start http://localhost:3333 cy:run"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "cypress": "3.3.1",
     "eslint-plugin-cypress": "2.2.1",
-    "serve": "11.0.1"
+    "serve": "11.0.1",
+    "start-server-and-test": "1.9.1"
   }
 }
