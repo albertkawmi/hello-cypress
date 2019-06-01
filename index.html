@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello Cypress</title>
+    <style>
+      html {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Hello Cypress</h1>
+      <p>Counting is fun. Try it:</p>
+      <p><button id="increment">+</button><button id="decrement">-</button></p>
+      <p>The count is <span id="count">0</span></p>
+    </div>
+    <script type="text/javascript">
+      var incrementButton = document.getElementById('increment');
+      var decrementButton = document.getElementById('decrement');
+      var countSpan = document.getElementById('count');
+      var countValue = 0;
+      incrementButton.addEventListener('click', function() {
+        countSpan.innerText = ++countValue;
+      });
+      decrementButton.addEventListener('click', function() {
+        countSpan.innerText = --countValue;
+      });
+    </script>
+  </body>
+</html>

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve ./ -p 3333",
+    "cypress:open": "cypress open",
+    "test": "npm start && cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/albertkawmi/hello-cypress/issues"
   },
-  "homepage": "https://github.com/albertkawmi/hello-cypress#readme"
+  "homepage": "https://github.com/albertkawmi/hello-cypress#readme",
+  "devDependencies": {
+    "cypress": "3.3.1",
+    "eslint-plugin-cypress": "2.2.1",
+    "serve": "11.0.1"
+  }
 }
