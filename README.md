@@ -16,6 +16,6 @@ To open Cypress UI: `npm run cy:open`
 
 To run the tests on command line (e.g. for CI): `npm test`
 
-## Using `testing-library` syntax
+## Using `cypress-testing-library` syntax
 
-This syntax encourages [writing tests that are not coupled to implementation details](https://kentcdodds.com/blog/testing-implementation-details), like the HTML element IDs. These tests are also closer to the way a user would interact with the app.
+[Cypress Testing Library](https://github.com/testing-library/cypress-testing-library) encourages [writing tests that are not coupled to implementation details](https://kentcdodds.com/blog/testing-implementation-details), like the HTML element IDs. These tests are also closer to the way a user would interact with the app.
