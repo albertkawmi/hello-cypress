@@ -1,6 +1,6 @@
 describe('Counter', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3333');
+    cy.visit('/');
   });
 
   it('increments', () => {
