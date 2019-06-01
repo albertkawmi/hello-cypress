@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/albertkawmi/hello-cypress#readme",
   "devDependencies": {
+    "@testing-library/cypress": "4.0.1",
     "cypress": "3.3.1",
     "eslint-plugin-cypress": "2.2.1",
     "serve": "11.0.1",

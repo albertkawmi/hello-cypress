@@ -23,7 +23,7 @@
       <h1>Hello Cypress</h1>
       <p>Counting is fun. Try it:</p>
       <p><button id="increment">+</button><button id="decrement">-</button></p>
-      <p>The count is <span id="count">0</span></p>
+      <p id="result">(This needs JavaScript)</p>
       <p>
         [<a href="https://github.com/albertkawmi/hello-cypress">Github Repo</a>]
       </p>
@@ -31,13 +31,18 @@
     <script type="text/javascript">
       var incrementButton = document.getElementById('increment');
       var decrementButton = document.getElementById('decrement');
-      var countSpan = document.getElementById('count');
+      var result = document.getElementById('result');
+      var resultPrefix = 'The count is ';
+
       var countValue = 0;
+
+      result.innerText = resultPrefix.concat(countValue);
+
       incrementButton.addEventListener('click', function() {
-        countSpan.innerText = ++countValue;
+        result.innerText = resultPrefix.concat(++countValue);
       });
       decrementButton.addEventListener('click', function() {
-        countSpan.innerText = --countValue;
+        result.innerText = resultPrefix.concat(--countValue);
       });
     </script>
   </body>
