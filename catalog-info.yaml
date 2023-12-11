@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-cypress
+  annotations:
+    github.com/project-slug: albertkawmi/hello-cypress
+spec:
+  type: other
+  lifecycle: unknown
+  owner: albertkawmi
